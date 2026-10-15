@@ -1,0 +1,2 @@
+SUPABASE_URL = "https://mxigrwbrerltuzpqncsq.supabase.co"
+SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im14aWdyd2JyZXJsdHV6cHFuY3NxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTE4ODIyMTIsImV4cCI6MjEwNzQ1ODIxMn0.hOcK-biNQfWk4jQdAWanCjtYr3Z3CycciAAQiUml6JQ"
