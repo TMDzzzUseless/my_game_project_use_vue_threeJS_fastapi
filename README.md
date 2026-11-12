@@ -20,3 +20,8 @@ source venv/bin/activate
 ### 安裝 FastAPI、Uvicorn（伺服器運行工具）以及 Supabase Python 套件
 pip install fastapi uvicorn supabase python-dotenv
 ## 3.一個簡單的 FastAPI 測試檔案 main.py
+
+# 2026/11/12
+新增requirements.txt
+修正vite.config.ts=>sever=>proxy位置
+連接port需改公開
