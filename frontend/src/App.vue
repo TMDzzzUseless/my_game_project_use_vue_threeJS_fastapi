@@ -26,7 +26,6 @@ const handleLogin = async () => {
       isLoggedIn.value = true
       loggedInEmail.value = data.user.email
       message.value = data.message
-      // 可以在這裡把 data.access_token 存到 localStorage 供後續遊戲 API 使用
       localStorage.setItem('access_token', data.access_token)
     } else {
       message.value = data.detail || '登入失敗'
@@ -67,70 +66,7 @@ const handleLogin = async () => {
   </div>
 </template>
 
-<style scoped>
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #1a1a1a;
-  color: white;
-  font-family: sans-serif;
-}
-
-.login-card {
-  background: #2a2a2a;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-  width: 320px;
-  text-align: center;
-}
-
-h1 {
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  color: #42b883;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-input {
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #444;
-  background: #333;
-  color: white;
-  font-size: 1rem;
-}
-
-button {
-  padding: 10px;
-  border-radius: 6px;
-  border: none;
-  background: #42b883;
-  color: white;
-  font-weight: bold;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-button:hover {
-  background: #35495e;
-}
-
-.message {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: #ff6b6b;
-}
-
-.message.success {
-  color: #42b883;
-}
+<style>
+/* 從 src/App.vue 進入 assets 資料夾抓取 login.css */
+@import './assets/login.css';
 </style>

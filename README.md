@@ -6,6 +6,7 @@ VUE3+threeJS+fastapi+superbase
 cd frontend
 ### 使用 Vite 建立 Vue + TypeScript 專案 (名稱用 . 代表當前資料夾)
 npm create vite@latest . -- --template vue-ts
+(codespase第二次不使用)
 ### 安裝基本依賴套件
 npm install
 ### 安裝 TresJS 核心與 Three.js 相關套件
@@ -19,6 +20,10 @@ python3 -m venv venv
 source venv/bin/activate
 ### 安裝 FastAPI、Uvicorn（伺服器運行工具）以及 Supabase Python 套件
 pip install fastapi uvicorn supabase python-dotenv
+有requirements.txt
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ## 3.一個簡單的 FastAPI 測試檔案 main.py
 
 # 2026/11/12
